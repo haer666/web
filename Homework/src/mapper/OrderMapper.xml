@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="dao.OrderWordInfoDAO">
+
+	<select id="getOrderById" resultType="vo.OrderWordInfo">
+		select * from order_t where orderId = #{orderId}
+	</select>
+	
+    <select id="getAllOrder" resultType="vo.OrderWordInfo">
+        select * from order_t
+    </select>
+</mapper>
